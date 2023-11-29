@@ -47,7 +47,7 @@ Next I installed Active Directory on Domain Controller 1(DC-1). Active Directory
 <img src="https://github.com/riek10/configure-ad/assets/113129662/64551a2a-84d5-46c3-8b12-c84b430b6b99" heigt="50%" width="50%"/>
 </p>
 <p>
-In step 3 i created a user/employee that will serve as an admin. Ill be adding this new user to the Domain Admins security group. 
+In step 3 i created an employee account that will serve as an admin user. Ill be adding this new user to the Domain Admins security group. 
 </p>
 <br />
 
@@ -56,6 +56,6 @@ In step 3 i created a user/employee that will serve as an admin. Ill be adding t
   <img src="https://github.com/riek10/configure-ad/assets/113129662/835ceb3e-567f-420c-827f-5e195efc61d7" height="50%" width="50%"/>
 </p>
 <p>
-  After successfuly logging in to the newly created Admin account i decided to use Windows Powershell ISE to randomly create employees with both user & password credentials to verify successfuly logging on to the network with other users. Using the credentials "User:bob.taf & pass:Password1" i was able to successfuly login.
+  After successfuly logging in to the newly created Admin account i decided to use Windows Powershell ISE to randomly generate employees with both user & password credentials to verify successfuly logging on to the network with other users. Using the credentials "User:bob.taf & pass:Password1" i was able to successfuly login.
 </p>
 <br />

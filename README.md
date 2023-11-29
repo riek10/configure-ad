@@ -19,33 +19,43 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Enable ICMPv4 Connection
+- Active Directory Installation
+- Create Admin User
+- Generate Random Users using Windows Powershell ISE
 
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/riek10/configure-ad/assets/113129662/7dc0ef21-ff1f-447d-81c0-ec3eb0ed2eab" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In step 1 , after creating the VMs necessary for this project i logged into both the Client-1 and DC-1 VMs to enable icmpv4 so the the two machines would be able to communicate with each other. After performing this step i tested the connection by running the "ping" command on Client-1 to verify the connection to the DC-1 VM.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/riek10/configure-ad/assets/113129662/ee9a12d8-4a81-484d-9425-8e0e4ffd3dac" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next I installed Active Directory on Domain Controller 1(DC-1). Active Directory is a database that connects users with different network resources used to get different tasks done. The database itself holds all user information and permissions permitted by the company.
+</p>
+<br />
+
+<p>
+<img src="https://github.com/riek10/configure-ad/assets/113129662/b07e546c-8c2c-4900-9631-fa199390cdf0" height="50%" width="50%"/>
+<img src="https://github.com/riek10/configure-ad/assets/113129662/64551a2a-84d5-46c3-8b12-c84b430b6b99" heigt="50%" width="50%"/>
+</p>
+<p>
+In step 3 i created a user/employee that will serve as an admin. Ill be adding this new user to the Domain Admins security group. 
+</p>
+<br />
+
+<p>
+  <img src="https://github.com/riek10/configure-ad/assets/113129662/dd1239d0-a250-4ea7-8385-02fedc319e7b" height="50%" width="50%"/>
+  <img src="https://github.com/riek10/configure-ad/assets/113129662/835ceb3e-567f-420c-827f-5e195efc61d7" height="50%" width="50%"/>
+</p>
+<p>
+  After successfuly logging in to the newly created Admin account i decided to use Windows Powershell ISE to randomly create employees with both user & password credentials to verify successfuly logging on to the network with other users. Using the credentials "User:bob.taf & pass:Password1" i was able to successfuly login.
 </p>
 <br />

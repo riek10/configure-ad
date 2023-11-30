@@ -8,7 +8,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+- Microsoft Remote Desktop
 - Active Directory Domain Services
 - PowerShell
 
@@ -30,7 +30,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://github.com/riek10/configure-ad/assets/113129662/7dc0ef21-ff1f-447d-81c0-ec3eb0ed2eab" height="80%" width="80%"/>
 </p>
 <p>
-In step 1 , after creating the VMs necessary for this project i logged into both the Client-1 and DC-1 VMs to enable icmpv4 so the the two machines would be able to communicate with each other. After performing this step i tested the connection by running the "ping" command on Client-1 to verify the connection to the DC-1 VM.
+In step 1 , after setting up the Virtual Machines necessary for this project i logged into both the Client-1 and DC-1 VMs to enable icmpv4 so the the two machines would be able to communicate with each other. After performing this step i tested the connection by running the "ping" command on Client-1 to verify the connection to the DC-1 VM.
 </p>
 <br />
 
